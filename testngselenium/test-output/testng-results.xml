@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-17T22:20:45 IST" name="Default suite" finished-at="2022-03-17T22:21:07 IST" duration-ms="22097">
+    <groups>
+      <group name="firefox">
+        <method signature="GroupTest.launchFireFox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" name="launchFireFox" class="com.simplilearn.testngselenium.GroupTest"/>
+        <method signature="GroupTest.loginWithFirefox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" name="loginWithFirefox" class="com.simplilearn.testngselenium.GroupTest"/>
+      </group> <!-- firefox -->
+      <group name="Chrome">
+        <method signature="GroupTest.launchChrome()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" name="launchChrome" class="com.simplilearn.testngselenium.GroupTest"/>
+        <method signature="GroupTest.login()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" name="login" class="com.simplilearn.testngselenium.GroupTest"/>
+      </group> <!-- Chrome -->
+      <group name="FB">
+        <method signature="FacebookTest.launchFb()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" name="launchFb" class="com.simplilearn.testngselenium.FacebookTest"/>
+      </group> <!-- FB -->
+    </groups>
+    <test started-at="2022-03-17T22:20:45 IST" name="Default test" finished-at="2022-03-17T22:21:07 IST" duration-ms="22097">
+      <class name="com.simplilearn.testngselenium.FacebookTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:45 IST" name="beforeMethod" finished-at="2022-03-17T22:20:48 IST" duration-ms="2964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="launchFb()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:48 IST" name="launchFb" finished-at="2022-03-17T22:20:49 IST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFb -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:49 IST" name="afterMethod" finished-at="2022-03-17T22:20:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:49 IST" name="beforeMethod" finished-at="2022-03-17T22:20:51 IST" duration-ms="1266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:51 IST" name="login" finished-at="2022-03-17T22:20:52 IST" duration-ms="1876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.FacebookTest@3ee37e5a]" started-at="2022-03-17T22:20:52 IST" name="afterMethod" finished-at="2022-03-17T22:20:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.simplilearn.testngselenium.FacebookTest -->
+      <class name="com.simplilearn.testngselenium.GroupTest">
+        <test-method signature="launchChrome()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" started-at="2022-03-17T22:20:52 IST" name="launchChrome" finished-at="2022-03-17T22:20:58 IST" duration-ms="5557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchChrome -->
+        <test-method signature="launchFireFox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" started-at="2022-03-17T22:20:58 IST" name="launchFireFox" finished-at="2022-03-17T22:20:58 IST" duration-ms="28" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'LAPTOP-HJIGUCQE', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'LAPTOP-HJIGUCQE', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:106)
+at com.simplilearn.testngselenium.GroupTest.launchFireFox(GroupTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFireFox -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" started-at="2022-03-17T22:20:58 IST" name="login" finished-at="2022-03-17T22:20:58 IST" depends-on-methods="com.simplilearn.testngselenium.GroupTest.launchChrome" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="loginWithFirefox()[pri:0, instance:com.simplilearn.testngselenium.GroupTest@54e1c68b]" started-at="2022-03-17T22:20:58 IST" name="loginWithFirefox" finished-at="2022-03-17T22:20:58 IST" depends-on-methods="com.simplilearn.testngselenium.GroupTest.launchFireFox" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.simplilearn.testngselenium.GroupTest.loginWithFirefox() on instance com.simplilearn.testngselenium.GroupTest@54e1c68b depends on not successfully finished methods 
+[com.simplilearn.testngselenium.GroupTest.launchFireFox() on instance com.simplilearn.testngselenium.GroupTest@54e1c68b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.simplilearn.testngselenium.GroupTest.loginWithFirefox() on instance com.simplilearn.testngselenium.GroupTest@54e1c68b depends on not successfully finished methods 
+[com.simplilearn.testngselenium.GroupTest.launchFireFox() on instance com.simplilearn.testngselenium.GroupTest@54e1c68b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithFirefox -->
+      </class> <!-- com.simplilearn.testngselenium.GroupTest -->
+      <class name="com.simplilearn.testngselenium.SimpleTestNG">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:45 IST" name="beforeSuite" finished-at="2022-03-17T22:20:45 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:45 IST" name="beforeTest" finished-at="2022-03-17T22:20:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="beforeClass" finished-at="2022-03-17T22:20:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="beforeMethod" finished-at="2022-03-17T22:20:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="method1()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="method1" finished-at="2022-03-17T22:20:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="afterMethod" finished-at="2022-03-17T22:20:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="beforeMethod" finished-at="2022-03-17T22:20:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="method2()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="method2" finished-at="2022-03-17T22:20:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="afterMethod" finished-at="2022-03-17T22:20:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:20:58 IST" name="afterClass" finished-at="2022-03-17T22:20:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:21:07 IST" name="afterTest" finished-at="2022-03-17T22:21:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.simplilearn.testngselenium.SimpleTestNG@771a660]" started-at="2022-03-17T22:21:07 IST" name="afterSuite" finished-at="2022-03-17T22:21:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.simplilearn.testngselenium.SimpleTestNG -->
+      <class name="com.simplilearn.testngselenium.TestNg1">
+        <test-method signature="testTrue()[pri:0, instance:com.simplilearn.testngselenium.TestNg1@2d52216b]" started-at="2022-03-17T22:20:58 IST" name="testTrue" finished-at="2022-03-17T22:20:58 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrue -->
+      </class> <!-- com.simplilearn.testngselenium.TestNg1 -->
+      <class name="com.simplilearn.testngselenium.AssersionsDemo">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:20:58 IST" name="beforeMethod" finished-at="2022-03-17T22:20:59 IST" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:20:59 IST" name="login" finished-at="2022-03-17T22:21:01 IST" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:21:01 IST" name="afterMethod" finished-at="2022-03-17T22:21:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:21:01 IST" name="beforeMethod" finished-at="2022-03-17T22:21:02 IST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="titleTest()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:21:02 IST" name="titleTest" finished-at="2022-03-17T22:21:07 IST" duration-ms="5295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.testngselenium.AssersionsDemo@242b836]" started-at="2022-03-17T22:21:07 IST" name="afterMethod" finished-at="2022-03-17T22:21:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.simplilearn.testngselenium.AssersionsDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
